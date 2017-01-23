@@ -11,6 +11,18 @@
 	padding-bottom: 0px;
 	text-align: center;
 	position: fixed;
+	z-index: 1001;
+	background-color: white;
+	display: block;
+	transition: all 2s ease-out;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fade
+{
+	0% { display: block;}
+	100% {transform: translateY(-100%); display: none;}
 }
 
 #shoe
@@ -55,4 +67,8 @@
 	50% {bottom: 70vh;transform: rotateZ(3600deg);}
 	75% {bottom: 200px;transform: rotateZ(0deg);}
 	100% {bottom: 200px;}
+}
+
+.content
+{
 }
