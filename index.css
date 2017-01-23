@@ -1,0 +1,51 @@
+*
+{
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.shoefootball
+{
+	width: 100%;
+	height: 100vh;
+	padding-bottom: 0px;
+	text-align: center;
+}
+
+#shoe
+{
+	position: absolute;
+	bottom: 50px;
+	right: 37.5%;
+	transition: all 1s linear;
+	animation-name: rotate;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes rotate
+{
+	0% {transform: rotateZ(0deg);}
+	50% {transform: rotateZ(30deg);}
+	100% {transform: rotateZ(0deg);}
+}
+
+#ball
+{
+	position: absolute;
+	bottom: 180px;
+	left: 50%;
+	transition: all 2s cubic-bezier(0,1.41,1,.42);/*cubic-bezier(1,0,1,.01)*/
+	animation-name: bounce;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bounce 
+{
+	0% {bottom: 185px;}
+	25% {bottom: 185px;}
+	50% {bottom: 500px;}
+	75% {bottom: 185px;}
+	100% {bottom: 180px;}
+}
