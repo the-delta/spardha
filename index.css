@@ -10,36 +10,41 @@
 	height: 100vh;
 	padding-bottom: 0px;
 	text-align: center;
+	position: fixed;
 }
 
 #shoe
 {
 	position: absolute;
+	left: 0px;
+	right: 0px;
+	margin: auto;
 	bottom: 60px;
-	right: 37.5%;
-	transition: all 4s linear;
+	transition: all 1s linear;
 	animation-name: rotate;
-	animation-duration: 4s;
+	animation-duration: 1s;
 	animation-iteration-count: infinite;
 }
 
 @keyframes rotate
 {
-	0% {transform: rotateZ(0deg);right: 36%;bottom: 35px;}
-	25% {transform: rotateZ(30deg); bottom: 60px; right: 37.7%;}
-	50% {transform: rotateZ(60deg); bottom: 60px; right: 37.7%;}
-	75% {transform: rotateZ(30deg); right: 37.5%;bottom: 60px;}
-	100% {transform: rotateZ(0deg);right: 36%;bottom: 35px;}
+	0% {transform: rotateZ(0deg);bottom: 35px;}
+	25% {transform: rotateZ(30deg); bottom: 60px;}
+	50% {transform: rotateZ(60deg); bottom: 60px;}
+	75% {transform: rotateZ(30deg); bottom: 60px;}
+	100% {transform: rotateZ(0deg);bottom: 35px;}
 }
 
 #ball
 {
 	position: absolute;
+	right: 50px;
+	left: 0px;
+	margin: auto;
 	bottom: 190px;
-	left: 50%;
-	transition: all 4s cubic-bezier(0,1.41,1,.42);/*cubic-bezier(1,0,1,.01)*/
+	transition: all 1s cubic-bezier(0,1.41,1,.42);/*cubic-bezier(1,0,1,.01)*/
 	animation-name: bounce;
-	animation-duration: 4s;
+	animation-duration: 1s;
 	animation-iteration-count: infinite;
 }
 
