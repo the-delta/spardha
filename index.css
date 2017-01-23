@@ -44,8 +44,8 @@
 @keyframes bounce 
 {
 	0% {bottom: 185px;}
-	25% {bottom: 185px;}
-	50% {bottom: 500px;}
-	75% {bottom: 185px;}
+	25% {bottom: 185px;transform: rotateZ(0deg);}
+	50% {bottom: 70vh;transform: rotateZ(3600deg);}
+	75% {bottom: 185px;transform: rotateZ(0deg);}
 	100% {bottom: 180px;}
 }
