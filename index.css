@@ -15,37 +15,39 @@
 #shoe
 {
 	position: absolute;
-	bottom: 50px;
+	bottom: 60px;
 	right: 37.5%;
-	transition: all 1s linear;
+	transition: all 4s linear;
 	animation-name: rotate;
-	animation-duration: 2s;
+	animation-duration: 4s;
 	animation-iteration-count: infinite;
 }
 
 @keyframes rotate
 {
-	0% {transform: rotateZ(0deg);}
-	50% {transform: rotateZ(30deg);}
-	100% {transform: rotateZ(0deg);}
+	0% {transform: rotateZ(0deg);right: 36%;bottom: 35px;}
+	25% {transform: rotateZ(30deg); bottom: 60px; right: 37.7%;}
+	50% {transform: rotateZ(60deg); bottom: 60px; right: 37.7%;}
+	75% {transform: rotateZ(30deg); right: 37.5%;bottom: 60px;}
+	100% {transform: rotateZ(0deg);right: 36%;bottom: 35px;}
 }
 
 #ball
 {
 	position: absolute;
-	bottom: 180px;
+	bottom: 190px;
 	left: 50%;
-	transition: all 2s cubic-bezier(0,1.41,1,.42);/*cubic-bezier(1,0,1,.01)*/
+	transition: all 4s cubic-bezier(0,1.41,1,.42);/*cubic-bezier(1,0,1,.01)*/
 	animation-name: bounce;
-	animation-duration: 2s;
+	animation-duration: 4s;
 	animation-iteration-count: infinite;
 }
 
 @keyframes bounce 
 {
-	0% {bottom: 185px;}
-	25% {bottom: 185px;transform: rotateZ(0deg);}
+	0% {bottom: 200px;}
+	25% {bottom: 200px;transform: rotateZ(0deg);}
 	50% {bottom: 70vh;transform: rotateZ(3600deg);}
-	75% {bottom: 185px;transform: rotateZ(0deg);}
-	100% {bottom: 180px;}
+	75% {bottom: 200px;transform: rotateZ(0deg);}
+	100% {bottom: 200px;}
 }
