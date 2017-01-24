@@ -106,7 +106,7 @@ a
 	margin: auto;
 	bottom: 190px;
 	-webkit-transition: all 1s cubic-bezier(0,1.41,1,.42);/*cubic-bezier(1,0,1,.01)*/
-	transition: all 1s cubic-bezier(0,1.41,1,.42);/*cubic-bezier(1,0,1,.01)*/
+			transition: all 1s cubic-bezier(0,1.41,1,.42);/*cubic-bezier(1,0,1,.01)*/
 	-webkit-animation-name: bounce;
 			animation-name: bounce;
 	-webkit-animation-duration: 1s;
@@ -160,13 +160,18 @@ a
 
 .navbar
 {
-	font-family: 'Neuton';
-	background-color: #383A48;
+	font-family: 'Lato';
+	background-color: rgba(0,0,0,0.5);
+}
+
+.navbar-brand
+{
+	font-size: 20px !important;
 }
 
 .navbar a
 {
-	color: grey;
+	color: yellowgreen;
 }
 
 .content
@@ -174,9 +179,49 @@ a
 	width: 100%;
 	height: 100vh;
 	
-	background-image: url("../images/background3.jpg");
+	background-image: url("../images/svits2.jpg");
 	background-position: bottom;
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: grey;
+	-webkit-transition: all 0.1s linear;
+			transition: all 0.1s linear;
+}
+
+.head
+{
+	width: 100%;
+	font-family: 'Lato';
+	font-size: 30px !important;
+	color: yellowgreen;
+	position: absolute;
+	text-align: center;
+	top: 55vh;
+	padding-left: 0; 
+	left: 0;
+	margin: 0 auto !important;
+	-webkit-transition: all 1s linear;
+	transition: all 1s linear;
+}
+
+h1
+{
+	font-weight: bold !important;
+	font-size: 40px;
+}
+
+.game
+{
+	-webkit-transition: all 1s linear;
+	transition: all 1s linear;
+	-webkit-animation-name: zoom;
+	animation-name: zoom;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+@keyframes zoom
+{
+	from {font-size: 0px;}
+	to {font-size: 30px;}
 }

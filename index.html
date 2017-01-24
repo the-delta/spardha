@@ -8,15 +8,21 @@
 		<script>
 			setTimeout(function(){
 				document.getElementsByClassName("shoefootball")[0].style.animationName = "fade";
-			}, 1000);
-			
+			}, 2000);
+			setTimeout(function(){
+				document.getElementsByClassName("content")[0].style.backgroundImage = "url('images/background3.jpg')";
+			}, 3500);
+			setTimeout(function(){
+				document.getElementsByClassName("head")[0].innerHTML ="<h1>1-5<sup>th</sup> MARCH SVVV's Spardha</h1><h2 class='game'>The Game is On!</h2>";
+			}, 4500);
 		</script>
 		<link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 		<script> $(function(){ $('.nav-tabs a:first').tab('show'); }); </script>
-		<link href="https://fonts.googleapis.com/css?family=Neuton" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Neuton" rel="stylesheet">
 	</head>
 	<body>
 		<div class="shoefootball">
@@ -37,20 +43,25 @@
 			    </div>
 			    <div class="collapse navbar-collapse" id="mynavbar">
 				    <ul class="nav navbar-nav">
-				      <li class="active"><a href="#">Home</a></li>
-				      <li><a href="#">Badminton</a></li>
-				      <li><a href="#">Table Tennis</a></li>
-				      <li><a href="#">Chess</a></li>
-				      <li><a href="#">Volleyball</a></li>
-				      <li><a href="#">Basketball</a></li>
-				      <li><a href="#">Athletics</a></li>
+				      <li class="active"><a href="#"><b>Home</b></a></li>
+				      <li><a href="#"><b>Badminton</b></a></li>
+				      <li><a href="#"><b>Table Tennis</b></a></li>
+				      <li><a href="#"><b>Chess</b></a></li>
+				      <li><a href="#"><b>Volleyball</b></a></li>
+				      <li><a href="#"><b>Basketball</b></a></li>
+				      <li><a href="#"><b>Athletics</b></a></li>
 				    </ul>
 				    <ul class="nav navbar-nav navbar-right">
-				      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+				      <li><a href="#"><span class="glyphicon glyphicon-user"></span><b> Register</b></a></li>
 				    </ul>
 				</div>
 			  </div>
 			</nav>
+			<div class="container-fluid">
+				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 head">
+					<h1>1-5<sup>th</sup> MARCH SVVV's Spardha</h1>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
