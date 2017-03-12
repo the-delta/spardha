@@ -180,7 +180,7 @@ a
 	width: 100%;
 	height: 100vh;
 	
-	background-image: url("../images/background3.jpg");
+	background-image: url("../images/background.jpg");
 	background-position: bottom;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -189,6 +189,20 @@ a
 			transition: all 0.1s linear;
 }
 
+.logo
+{
+	position: absolute;
+	top: 23vh;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+.spardha-logo
+{
+	width: 200px;
+	height: 200px;
+}
 
 .head
 {
@@ -220,6 +234,15 @@ h1
 	animation-name: zoom;
 	-webkit-animation-duration: 1s;
 	animation-3uration: 1s;
+}
+
+.tttable tr th
+{
+	text-align: center;
+}
+.tttable tr td
+{
+	text-align: center;
 }
 
 @keyframes zoom
@@ -267,18 +290,18 @@ h1
 	top: 0;
 	bottom: 0;
 	margin: auto;
-	height: 500px;
+	height: 450px;
 	padding-left: 10px;
 	padding-right: 10px;
 	background-color: white;
 	color: rgb(40,40,40);
 	font-family: 'Lato';
+	overflow: auto;
 }
 
 .sports-heading
 {
 	margin-bottom: 25px;
-	font-weight: bold;
 }
 
 .div-info
@@ -287,6 +310,32 @@ h1
 	text-align: left;
 	font-size: 18px;
 	font-weight: bold;
+}
+
+.div-info-rules
+{
+	width: 100%;
+	text-align: left;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.back
+{
+	width: 15px;
+	height: 15px;
+	border-radius: 7.5px;
+	background-color: rgba(154,205,50, 0.8);
+	margin-top: 10px;
+	-webkit-transition: all 0.2s ease-in;
+			transition: all 0.2s ease-in;
+}
+
+.back:hover
+{
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
 }
 
 /*css for scrollbars*/
