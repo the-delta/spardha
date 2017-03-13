@@ -202,6 +202,25 @@ a
 {
 	width: 200px;
 	height: 200px;
+	-webkit-transition: all 1.5s linear;
+			transition: all 1.5s linear;
+	-webkit-animation-duration: 1.5s;
+			animation-duration: 1.5s;
+	-webkit-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+}
+
+@keyframes rotatelogo{
+	0%{
+		-webkit-transform: rotateY(0deg);
+		   -moz-transform: rotateY(0deg);
+				transform: rotateY(0deg);
+	}
+	100%{
+		-webkit-transform: rotateY(360deg);
+		   -moz-transform: rotateY(360deg);
+				transform: rotateY(360deg);
+	}
 }
 
 .head
@@ -229,11 +248,11 @@ h1
 .game
 {
 	-webkit-transition: all 1s linear;
-	transition: all 1s linear;
+			transition: all 1s linear;
 	-webkit-animation-name: zoom;
-	animation-name: zoom;
+			animation-name: zoom;
 	-webkit-animation-duration: 1s;
-	animation-3uration: 1s;
+			animation-duration: 1s;
 }
 
 .tttable tr th
@@ -293,10 +312,48 @@ h1
 	height: 450px;
 	padding-left: 10px;
 	padding-right: 10px;
-	background-color: white;
+	background-color: #FEFCFF;
 	color: rgb(40,40,40);
 	font-family: 'Lato';
 	overflow: auto;
+	-webkit-transform:translateX(-300%);
+		-ms-transform:translateX(-300%);
+			transform:translateX(-300%);
+	-webkit-transition: all 0.75s cubic-bezier(.31,.37,.61,1.57);
+			transition: all 0.75s cubic-bezier(.31,.37,.61,1.57);
+	-webkit-animation-name: train;
+			animation-name: train;
+	-webkit-animation-duration: 0.75s;
+			animation-duration: 0.75s;
+	-webkit-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+}
+
+@keyframes train
+{
+	75%{
+		-webkit-transform:translateX(15%);
+			-ms-transform:translateX(15%);
+				transform:translateX(15%);
+	}
+	100%
+	{
+		-webkit-transform:translateX(0%);
+			-ms-transform:translateX(0%);
+				transform:translateX(0%);
+	}
+}
+
+.display-box h2
+{
+	color: #F58D74;
+	font-weight: bold;
+}
+
+.display-box .div-info h3
+{
+	color: #5664AF;
+	font-weight: bold;
 }
 
 .sports-heading

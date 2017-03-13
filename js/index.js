@@ -1,7 +1,9 @@
 function load()
 {
 	document.getElementsByClassName("shoefootball")[0].style.animationName = "fade";
-
+	setTimeout(function(){
+		document.getElementsByClassName("spardha-logo")[0].style.animationName = "rotatelogo";
+	}, 1000);
 	setTimeout(function(){
 		document.getElementsByClassName("head")[0].innerHTML ="<h1>1<sup>st</sup>-4<sup>th</sup> APRIL SVVV's Spardha</h1><h2 class='game'>The Game is On!</h2>";
 	}, 2500);
