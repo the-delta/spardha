@@ -810,6 +810,13 @@ function loadSchedule()
 	var divinfo = document.createElement("div");
 	divinfo.className = "div-info";
 
+	var comingsoon = document.createElement("h3");
+	comingsoon.className = "comingsoon-heading";
+	var comingsoontext = document.createTextNode("Coming Soon!");
+	comingsoon.appendChild(comingsoontext);
+
+	divinfo.appendChild(comingsoon);
+
 	dispdiv.appendChild(back);
 	dispdiv.appendChild(about);
 	dispdiv.appendChild(divinfo);
