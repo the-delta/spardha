@@ -693,6 +693,94 @@ function loadBasketball()
 	var divinfo = document.createElement("div");
 	divinfo.className = "div-info";
 
+	var general = document.createElement("h3");
+	general.className = "general-rules-heading";
+	var generaltext = document.createTextNode("GENERAL RULES");
+	general.appendChild(generaltext);
+
+	var bulletList1 = document.createElement("ol");
+	bulletList1.setAttribute("type", "1");
+	bulletList1.className = "bullet-list-1";
+	var listitem1 = document.createElement("li");
+	var listitem1text = document.createTextNode("All players should come in proper kits (eg. Jersey and other sport gear).");
+	listitem1.appendChild(listitem1text);
+	var listitem3 = document.createElement("li");
+	var listitem3text = document.createTextNode("All the rules apart from mentioned are according to the FIBA rule book.");
+	listitem3.appendChild(listitem3text);
+	var listitem4 = document.createElement("li");
+	var listitem4text = document.createTextNode("Use of abusive of foul language during the play can lead to technical fouls or expulsion depending on the referee.");
+	listitem4.appendChild(listitem4text);
+	var listitem5 = document.createElement("li");
+	var listitem5text = document.createTextNode("Teams must arrive at the court 20 minutes before the scheduled start time.");
+	listitem5.appendChild(listitem5text);
+	var listitem6 = document.createElement("li");
+	var listitem6text = document.createTextNode("Walkover will be given to a team if the opponent team is not able to reach the ground within 30 minutes of the scheduled time.");
+	listitem6.appendChild(listitem6text);
+
+	bulletList1.appendChild(listitem1);
+	bulletList1.appendChild(listitem3);
+	bulletList1.appendChild(listitem4);
+	bulletList1.appendChild(listitem5);
+	bulletList1.appendChild(listitem6);
+
+	var format = document.createElement("h3");
+	format.className = "format-heading";
+	var formattext = document.createTextNode("FORMAT");
+	format.appendChild(formattext);
+
+	/*var bulletList2 = document.createElement("ol");
+	bulletList2.setAttribute("type", "1");
+	bulletList2.className = "bullet-list-2";
+	var listitem21 = document.createElement("li");
+	var listitem21text = document.createTextNode("Each Clash (between teams) will have 5 matches for MEN and 3 matches for WOMEN.");
+	listitem21.appendChild(listitem21text);
+	var listitem22 = document.createElement("li");
+	var listitem22text = document.createTextNode("ORDER :");
+	var listitem22bullet = document.createElement("ul");
+	listitem22bullet.setAttribute("type", "disc");
+	var listitem22item1 = document.createElement("li");
+	var listitem22item1text = document.createTextNode("MEN - 1st singles, 2nd singles, 1st doubles, 3rd singles, 2nd doubles.");
+	listitem22item1.appendChild(listitem22item1text);
+	var listitem22item2 = document.createElement("li");
+	var listitem22item2text = document.createTextNode("WOMEN - 1st singles, 1st doubles, 2nd singles.");
+	listitem22item2.appendChild(listitem22item2text);
+	listitem22bullet.appendChild(listitem22item1);
+	listitem22bullet.appendChild(listitem22item2);
+
+	listitem22.appendChild(listitem22text);
+	listitem22.appendChild(listitem22bullet);
+
+	bulletList2.appendChild(listitem21);
+	bulletList2.appendChild(listitem22);*/
+
+	var participation = document.createElement("h3");
+	participation.className = "participation-heading";
+	var participationtext = document.createTextNode("PARTICIPATION");
+	participation.appendChild(participationtext);
+
+	/*var bulletList3 = document.createElement("ol");
+	bulletList3.setAttribute("type", "1");
+	bulletList3.className = "bullet-list-3";
+	var listitem31 = document.createElement("li");
+	var listitem31text = document.createTextNode("Each team must consist of a minimum of 4 and maximum of 5 players in a men\'s team and a minimum of 2 and maximum of 4 players in a women\'s team.");
+	listitem31.appendChild(listitem31text);
+	var listitem32 = document.createElement("li");
+	var listitem32text = document.createTextNode("A player can play a maximum of two matches that is 1 singles and 1 doubles.");
+	listitem32.appendChild(listitem32text);
+
+	bulletList3.appendChild(listitem31);
+	bulletList3.appendChild(listitem32);*/
+
+	divinfo.appendChild(general);
+	divinfo.appendChild(bulletList1);
+
+	divinfo.appendChild(format);
+	/*divinfo.appendChild(bulletList2);*/
+
+	divinfo.appendChild(participation);
+	/*divinfo.appendChild(bulletList3);*/
+
+
 	dispdiv.appendChild(back);
 	dispdiv.appendChild(about);
 	dispdiv.appendChild(divinfo);
@@ -732,7 +820,7 @@ function loadSchedule()
 	return false;
 }
 
-function loadRegulations()
+/*function loadRegulations()
 {
 	var div = document.createElement("div");
 	div.className = 'container display';
@@ -759,5 +847,5 @@ function loadRegulations()
 	$("body").prepend(div);
 	$("body").css("overflow","hidden");
 	return false;
-}
+}*/
 
