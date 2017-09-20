@@ -5,7 +5,7 @@ function load()
 		document.getElementsByClassName("spardha-logo")[0].style.animationName = "rotatelogo";
 	}, 1000);
 	setTimeout(function(){
-		document.getElementsByClassName("head")[0].innerHTML ="<h1>1<sup>st</sup>-4<sup>th</sup> APRIL SVVV's Spardha</h1><h2 class='game'>The Game is On!</h2>";
+		document.getElementsByClassName("head")[0].innerHTML ="<h1>9<sup>th</sup>-13<sup>th</sup> OCTOBER SVVV's Spardha</h1><h2 class='game'>The Game is On!</h2>";
 	}, 2500);
 }
 
@@ -25,6 +25,89 @@ function goBack()
 {
 	$(".display").remove();
     $("body").css("overflow","auto");
+}
+
+function loadRegulations()
+{
+	var div = document.createElement("div");
+	div.className = 'container display';
+	var dispdiv = document.createElement("div");
+	dispdiv.className = 'col-lg-5 col-md-6 col-sm-11 col-xs-12 display-box';
+
+	var back = document.createElement("div");
+	back.className = "back";
+	back.setAttribute("onclick","goBack();");
+
+	var about = document.createElement("h2");
+	about.className = "sports-heading";
+	var abouttext = document.createTextNode("Rules and Regulations/Documents Required");
+	about.appendChild(abouttext);
+
+	var divinfo = document.createElement("div");
+	divinfo.className = "div-info";
+
+	var textitem1 = document.createTextNode("Documents Required:");
+	var bulletList1 = document.createElement("ul");
+	bulletList1.setAttribute("type", "disc");
+	bulletList1.className = "bullet-list-1";
+	var listitem1 = document.createElement("li");
+	var linkReg = document.createElement("a");
+	linkReg.setAttribute("href", "documents/registrationform.pdf");
+	linkReg.setAttribute("target", "_blank");
+	var listitem1text = document.createTextNode("Registration Form");
+	listitem1.appendChild(listitem1text);
+	linkReg.appendChild(listitem1);
+	var linkEli = document.createElement("a");
+	linkEli.setAttribute("href", "documents/eligibilityform.pdf");
+	linkEli.setAttribute("target", "_blank");
+	var listitem2 = document.createElement("li");
+	var listitem2text = document.createTextNode("Eligibility Form");
+	listitem2.appendChild(listitem2text);
+	linkEli.appendChild(listitem2);
+	
+
+	bulletList1.appendChild(linkReg);
+	bulletList1.appendChild(linkEli);
+
+	var textitem2 = document.createTextNode("Rules and Regulations:");
+	var bulletList2 = document.createElement("ul");
+	bulletList2.setAttribute("type", "disc");
+	bulletList2.className = "bullet-list-1";
+	var listitem21 = document.createElement("li");
+	var listitem21text = document.createTextNode("Don`t use bad language around players and others who might be offended.");
+	listitem21.appendChild(listitem21text);
+	var listitem22 = document.createElement("li");
+	var listitem22text = document.createTextNode("It is highly restricted to Drink and Smoke inside the college premises.");
+	listitem22.appendChild(listitem22text);
+	var listitem23 = document.createElement("li");
+	var listitem23text = document.createTextNode("It is highly restricted to consume Tobacco inside the college premises.");
+	listitem23.appendChild(listitem23text);
+	var listitem24 = document.createElement("li");
+	var listitem24text = document.createTextNode("It is the responsibility of the player itself in case of any damage of sport goods. He will have to pay for that loss.");
+	listitem24.appendChild(listitem24text);
+	
+
+	bulletList2.appendChild(listitem21);
+	bulletList2.appendChild(listitem22);
+	bulletList2.appendChild(listitem23);
+	bulletList2.appendChild(listitem24);
+
+	var textitem3 = document.createTextNode("If we (Sports Committee, SVVV) notice any of the above mentioned activity then disciplinary actions will be taken.");
+
+	divinfo.appendChild(textitem1);
+	divinfo.appendChild(bulletList1);
+	divinfo.appendChild(textitem2);
+	divinfo.appendChild(bulletList2);
+	divinfo.appendChild(textitem3);
+
+	dispdiv.appendChild(back);
+	dispdiv.appendChild(about);
+	dispdiv.appendChild(divinfo);
+	div.appendChild(dispdiv);
+
+	$("body").prepend(div);
+	$("body").css("overflow","hidden");
+	return false;
 }
 
 function loadAbout()

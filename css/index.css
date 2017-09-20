@@ -382,17 +382,10 @@ h1
 	width: 15px;
 	height: 15px;
 	border-radius: 7.5px;
-	background-color: rgba(154,205,50, 0.8);
+	background-color: rgba(0,0,0, 0.5);
 	margin-top: 10px;
 	-webkit-transition: all 0.2s ease-in;
 			transition: all 0.2s ease-in;
-}
-
-.back:hover
-{
-	width: 10px;
-	height: 10px;
-	border-radius: 5px;
 }
 
 /*css for scrollbars*/
